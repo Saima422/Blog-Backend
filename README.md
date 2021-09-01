@@ -504,6 +504,6 @@ Author - Saima Sayed
 <br>
 [LinkedIn](https://www.linkedin.com/in/saima-sayed-6482481b9/)
 <br>
-[Hosted Server on Heroku](https://blog-hosted-backend-server.herokuapp.com/blogs)
+[Hosted Server on Heroku](https://blog-hosted-backend-server.herokuapp.com)
 
 
