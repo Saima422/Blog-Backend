@@ -312,7 +312,6 @@ const deleteBlog = async (req, res, next) => {
         
             if(resData.blogImageId){
                 cloudinary.v2.uploader.destroy(resData.blogImageId, function(error,result) {
-                    console.log(result, error) 
                 });
             }  
         }
@@ -321,7 +320,7 @@ const deleteBlog = async (req, res, next) => {
         
             if(image_saved_mode == 'cloudinary'){
                 return next(new GlobalErrorhandling({
-                    message: 'Previous Image was saved in Cloudinary mode and cannot be updated in Local mode',
+                    message: 'Previous Image was saved in Cloudinary mode and cannot be deleted in Local mode',
                     error: "Some Problem Occurred",
                 }).badRequest());
             }
@@ -332,7 +331,7 @@ const deleteBlog = async (req, res, next) => {
                 fs.unlink(path, (error) => {
                     if(error){
                         return next(new GlobalErrorhandling({
-                            message: 'Image cannot be updated',
+                            message: 'Image cannot be deleted',
                             error: error,
                         }).internalServerError());
                     }
