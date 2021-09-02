@@ -36,12 +36,12 @@ const blogSchema = new Schema({
     blogTitle: {
         type: String,
         required: [true, "A title for Blog is required"],
-        maxlength: [10, "Blog Title cannot be too long"],
+        maxlength: [20, "Blog Title cannot be too long"],
     },
     blogContent: {
         type: String,
         required: [true, "Content for Blog is required"],
-        minlength: [20, "Blog content should have more content"],
+        minlength: [30, "Blog content should have more content"],
     },
     blogImage: {
         type: String,
@@ -60,7 +60,7 @@ const blogSchema = new Schema({
             title: {
                 type: String,
                 required: [true, "A title for Related Link is required"],
-                maxlength: [10, "Blog Title cannot be too long"]
+                maxlength: [20, "Blog Title cannot be too long"]
             },
             href: {
                 type: String,
