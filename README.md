@@ -486,8 +486,8 @@ OR
 * Get a Random Blog
 * Get a Blog with specific ID
 * Add a New Blog
-* Update an existing Blog by providing Todo ID
-* Delete an existing Blog by providing Todo ID
+* Update an existing Blog by providing Blog ID
+* Delete an existing Blog by providing Blog ID
 * MongoDB Database for storing the Blogs
 * Cloudinary/Local Storage for storing Blog Images
 
