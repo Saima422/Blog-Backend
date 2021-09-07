@@ -490,6 +490,7 @@ OR
 * Delete an existing Blog by providing Blog ID
 * MongoDB Database for storing the Blogs
 * Cloudinary/Local Storage for storing Blog Images
+* Adds Related Blogs from database to the new blog's relatedLinks based on provided tag.
 
 ## Sources
 
